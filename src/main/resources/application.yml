@@ -1,0 +1,29 @@
+info:
+  app:
+    name: kotlin-in-springboot
+    description: dforce iaac runner
+    version: 1.0
+---
+application:
+  title: kotlin-in-springboot
+---
+logging:
+  level:
+    root: WARN
+    org.springframework.web: INFO
+    com.github.peterchen82: DEBUG
+---
+spring:
+  datasource:
+    url: jdbc:mysql://mysql:3306/user?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+---
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
